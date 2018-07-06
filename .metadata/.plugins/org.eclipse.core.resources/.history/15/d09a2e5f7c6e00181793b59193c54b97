@@ -1,0 +1,6 @@
+package hurtownia;
+
+public class ExhaustPart extends Part {
+	public String EuroCompliance;
+
+}

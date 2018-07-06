@@ -1,0 +1,49 @@
+package zadanie;
+
+public enum Pizza {
+	MARGHERITA(true, true, false, false),
+	CAPRISIOSA (true, true, true, false),
+	PROSCIUTTO (true, true, false, true);
+	// pole klasy
+	 private boolean tomatoSauce;
+	 private boolean cheese;
+	 private boolean mushrooms;
+	 private boolean ham;
+	 
+	//konstruktor
+	Pizza (boolean tomatoSauce, boolean cheese, boolean mushrooms, boolean ham){
+		this.tomatoSauce=tomatoSauce;
+		this.cheese=cheese;
+		this.mushrooms=mushrooms;
+		this.ham=ham;
+	}
+	
+	//gettery
+	
+	public boolean getTomatoSauce() {
+		return tomatoSauce;
+	}
+	
+	public boolean getCheese() {
+		return cheese;
+	}
+	
+	public boolean getMushrooms() {
+		return mushrooms;
+	}
+	
+	public boolean getHam() {
+		return ham;
+	}
+	
+	
+		
+	@Override
+	public String toString() {
+		//przypisanie nazwy pizzy
+		String result=this.name();
+		return  result;
+	}
+	
+
+}

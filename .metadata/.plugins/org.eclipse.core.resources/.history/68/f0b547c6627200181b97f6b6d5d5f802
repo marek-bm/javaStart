@@ -1,0 +1,6 @@
+package prework;
+
+public enum Size {
+	SMALL ("Maly"), MEDIUM ("Sredni"), LARGE ("Duzy");
+
+}

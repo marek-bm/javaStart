@@ -1,0 +1,11 @@
+package prework;
+
+public class ShirtShop {
+	public static void main(String[] args) {
+		Tshirt tshirt=new Tshirt();
+		tshirt.setSize(Size.MEDIUM);
+		
+		System.out.println(tshirt.getSize());
+	}
+
+}

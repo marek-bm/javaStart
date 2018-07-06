@@ -1,0 +1,19 @@
+import java.util.Scanner;
+
+public class University {
+	public static void main(String[] args) {
+		Scanner input=new Scanner(System.in);
+		
+		public Student createStudent(String name; String lastName; int index){
+			name=input.nextLine();
+			lastName=input.nextLine();
+			index=input.nextInt();
+			input.nextLine();
+			return new Student(name,lastName, index);
+			
+			
+		}
+		
+	}
+
+}

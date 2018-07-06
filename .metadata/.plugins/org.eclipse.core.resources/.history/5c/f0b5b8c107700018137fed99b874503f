@@ -1,0 +1,13 @@
+package app;
+import data.Computer;
+import data.DataStore;
+
+public class Shop {
+	public static void main(String[] args) {
+		public final static int EXIT=0;
+		
+		
+		
+	}
+
+}

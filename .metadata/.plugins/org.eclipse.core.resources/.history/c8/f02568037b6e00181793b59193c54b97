@@ -1,0 +1,8 @@
+package hurtownia;
+
+public class Part {
+	public String partID;
+	public String manufacturer;
+	public String productionBatch;
+	
+}

@@ -1,0 +1,57 @@
+package app;
+import data.Computer;
+import data.DataStore;
+import java.util.Scanner;
+
+public class Shop {
+	public static final int EXIT=0;
+	public static final int ADD_COMP=1;
+	public static final int CHECK_AVAILABILITY=2;
+	
+	public void info() {
+		System.out.println("Wybierz opcje:");
+		System.out.println("0- for exit");
+		System.out.println("1 - to add computer");
+		System.out.println("2 - to check availability");
+	}
+	
+	public static void main(String[] args) {
+		DataStore dataStore=new DataStore();
+		
+		Scanner sc=new Scanner(System.in);
+		int action;
+		
+		System.out.println("Wybierz opcje:");
+		System.out.println("0- for exit");
+		System.out.println("1 - to add computer");
+		System.out.println("2 - to check availability");
+		
+		while ((action=sc.nextInt())!=EXIT) {
+			switch(action) {
+				case ADD_COMP:
+					
+					dataStore.create();
+					break;
+				case CHECK_AVAILABILITY:
+					dataStore.checkAvailability();
+					break;
+					
+				default:
+					System.out.println("brak takiejopcji");
+					System.out.println(" ");
+					
+			}
+		
+			System.out.println("Wybierz opcje:");
+			System.out.println("0- for exit");
+			System.out.println("1 - to add computer");
+			System.out.println("2 - to check availability");
+		}
+		
+		
+		
+	
+		
+	}
+
+}

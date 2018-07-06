@@ -1,0 +1,19 @@
+package prework;
+
+public class ShirtShop {
+	public static void main(String[] args) {
+		
+		System.out.println("Dostepne rozmiary koszulek");
+		for(Size s: Size.values()) {
+			System.out.println(s.getDescription());	
+		}
+		
+		Tshirt tshirt=new Tshirt();
+		tshirt.setSize(Size.MEDIUM);
+		
+		System.out.println(tshirt.getSize());
+		System.out.println("Wybrales rozmiar" + tshirt.getSize().getDescription());
+		
+	}
+
+}

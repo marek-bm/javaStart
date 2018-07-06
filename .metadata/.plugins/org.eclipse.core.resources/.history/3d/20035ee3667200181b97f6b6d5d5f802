@@ -1,0 +1,36 @@
+package prework;
+
+public class ShirtShop {
+	public static void main(String[] args) {
+		
+		System.out.println("Dostepne rozmiary koszulek");
+		for(Size s: Size.values()) {
+			System.out.println(s.getDescription());	
+		}
+		
+		Tshirt tshirt=new Tshirt();
+		//1 sposob ustalenia rozmiaru:
+		//tshirt.setSize(Size.MEDIUM);
+		
+		//2: przy uzyciu metody valueOf
+		// tshirt.setSize(Size.valueOf("MEDIUM"));
+		
+		//3 za pomoca funkcji:
+		Size tshirtSize= sizeFromDescription("Maly");
+		tshirt.setSize(tshirtSize);
+		
+		System.out.println(tshirt.getSize());
+		System.out.println("Wybrales rozmiar " + tshirt.getSize().getDescription());
+		
+	}
+	
+	static Size sizeFromDescription(String desc) {
+		for(Size s: Size.values()) {
+			if(s.getDescription().equals(desc)) {
+				return s;
+			}
+			return Size.MEDIUM;
+		}
+	}
+
+}

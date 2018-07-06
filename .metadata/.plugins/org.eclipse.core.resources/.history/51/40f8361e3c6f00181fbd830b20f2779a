@@ -1,0 +1,9 @@
+package data;
+
+public class Fruit {
+	
+	public void printInfo() {
+		System.out.print("Owoc: ");
+	}
+
+}

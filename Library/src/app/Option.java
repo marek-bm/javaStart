@@ -1,0 +1,35 @@
+package app;
+
+public enum Option {
+	EXIT(0, "exit"),
+	ADD_BOOK(1, "dodaj ksiazke"),
+	ADD_MAGAZINE (2, "dodanie magazynu"),
+	PRINT_BOOKS (3, "lista dostepnych ksiazek"),
+	PRINT_MAGAZINES(4, "lista dostepnych czasopism");
+	
+	private int value;
+	private String description;
+	
+	public String getDescription() {
+		return description;
+	}
+	
+	public int getValue() {
+		return value;
+	}
+	
+	Option(int value, String desc){
+		this.value=value;
+		this.description=desc;
+	}
+	
+	@Override
+	public String toString() {
+		return value +  "-" + description;
+	}
+	
+	public static Option createFromInt(int option) {
+		return Option.values()[option];
+	}
+
+}

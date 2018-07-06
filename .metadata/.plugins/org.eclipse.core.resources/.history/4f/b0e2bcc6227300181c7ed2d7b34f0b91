@@ -1,0 +1,14 @@
+package zadanie;
+
+public class Pizzeria {
+	public static void main(String[] args) {
+		System.out.println("Menu:");
+		for(Pizza pizza: Pizza.values()) {
+			pizza.getDescription();
+		}
+		
+		
+	
+	}
+
+}

@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<qualifiedTypeNameHistroy>
+    <fullyQualifiedTypeName name="Car"/>
+    <fullyQualifiedTypeName name="Point"/>
+    <fullyQualifiedTypeName name="controller.PointController"/>
+    <fullyQualifiedTypeName name="java.awt.Point"/>
+    <fullyQualifiedTypeName name="data.Point"/>
+    <fullyQualifiedTypeName name="user"/>
+    <fullyQualifiedTypeName name="tablice.Employee"/>
+    <fullyQualifiedTypeName name="java.lang.System"/>
+    <fullyQualifiedTypeName name="java.util.Scanner"/>
+    <fullyQualifiedTypeName name="java.util.Locale"/>
+    <fullyQualifiedTypeName name="CalcMethods.CalcMethods"/>
+    <fullyQualifiedTypeName name="CalcData.CalcData"/>
+    <fullyQualifiedTypeName name="com.sun.deploy.jcp.Main"/>
+    <fullyQualifiedTypeName name="method.Hospital"/>
+    <fullyQualifiedTypeName name="utils.DataReader"/>
+    <fullyQualifiedTypeName name="data.Library"/>
+    <fullyQualifiedTypeName name="utils.Reader"/>
+    <fullyQualifiedTypeName name="data.Hospital"/>
+    <fullyQualifiedTypeName name="data.Patient"/>
+    <fullyQualifiedTypeName name="Student"/>
+    <fullyQualifiedTypeName name="hurtownia.Part"/>
+    <fullyQualifiedTypeName name="hurtownia.ExhaustPart"/>
+    <fullyQualifiedTypeName name="hurtownia.TireAndWheel"/>
+    <fullyQualifiedTypeName name="data.Book"/>
+    <fullyQualifiedTypeName name="data.Magazine"/>
+    <fullyQualifiedTypeName name="data.Publication"/>
+    <fullyQualifiedTypeName name="data.Apple"/>
+    <fullyQualifiedTypeName name="data.Fruit"/>
+    <fullyQualifiedTypeName name="data.Computer"/>
+    <fullyQualifiedTypeName name="data.DataStore"/>
+    <fullyQualifiedTypeName name="app.Shop"/>
+</qualifiedTypeNameHistroy>

@@ -1,0 +1,74 @@
+package app;
+import utils.DataReader;
+import data.Book;
+import data.Library;
+import data.Magazine;
+import data.Publication;
+
+
+public class LibraryControl {
+		
+	//zmienna do komunikacji z uzytkownikiem
+	private DataReader dataReader;
+	
+	//"biblioteka" przechowujaca dane
+	private Library library;
+
+	public LibraryControl() {
+		dataReader= new DataReader();
+		library = new Library();
+	}
+	
+	/*
+	 * glowna petla programu, ktora pozwala  na wybor opcji i interakcje
+	 */
+	public void controlLoop() {
+		Option option;
+		printOptions();
+		while((option=Option.createFromInt(dataReader.getInt()))!=Option.EXIT) {
+			switch(option) {
+			case ADD_BOOK:
+				addBook();
+				break;
+			case ADD_MAGAZINE:
+				addMagazine();
+			case PRINT_BOOKS:
+				printBooks();
+				break;
+			case PRINT_MAGAZINES:
+				printMagazines();
+			default:
+				System.out.println("Nie ma takiej opcji, wprowadz ponownie");
+			}
+			printOptions();
+		}
+		//zamykamy strumien wejscia
+		dataReader.Close();
+	}
+	private void printOptions() {
+		System.out.println("wybierz opecje");
+		for(Option o: Option.values())
+		{System.out.println(o);
+			
+		}
+	}
+	
+	private void addBook() {
+		Book book=dataReader.readAndCreateBook();
+		library.addBook(book);
+	}
+	
+	private void printBooks() {
+		library.printBooks();
+	}
+	
+	private void addMagazine() {
+		Magazine magazine=dataReader.readAndCreateMagazine();
+		library.addMagazine(magazine);
+	}
+	
+	private void printMagazines() {
+		library.printMagazines();
+	}
+	
+}

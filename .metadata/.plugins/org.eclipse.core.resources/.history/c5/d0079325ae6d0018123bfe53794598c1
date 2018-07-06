@@ -1,0 +1,10 @@
+public class University {
+	public static void main(String[] args) {
+		System.out.println("poczatkowa liczba studentow "+Student.studentsNumber);
+		Student s1=new Student("Marek", "jast", 2345);
+		Student s2=new Student("Filip", "jastrz", 47852);
+		System.out.println("aktualna liczba studentow"+Student.studentsNumber);
+	
+	}
+}
+

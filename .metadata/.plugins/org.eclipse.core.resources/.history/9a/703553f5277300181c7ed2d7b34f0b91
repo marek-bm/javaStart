@@ -1,0 +1,31 @@
+package zadanie;
+
+public enum Pizza {
+	MARGHERITA("Sos pomidorowy + ser"), CAPRISIOSA ("Sos pomidorowy + ser + pieczarki"), PROSCIUTTO ("sos pomidorowy + sos + szynka");
+	// pole klasy
+	private String description;
+	private Pizza pizza;
+	
+	
+	//konstruktor
+	Pizza (String description){
+		this.description=description;
+	}
+	
+	public Pizza getPizza() {
+		return pizza;
+	}
+	
+	
+	public String getDescription() {
+		return description;
+	}
+	
+	@Override
+	public String toString() {
+		
+		return  description;
+	}
+	
+
+}
