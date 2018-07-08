@@ -1,8 +1,0 @@
-
-public class World {
-	public static void main(String[] args) {
-		Human adam=new Human("Adam", 185.5);
-		Human ewa=new Human("Ewa", 167.5);
-	}
-
-}

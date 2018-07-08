@@ -1,7 +1,0 @@
-package hurtownia;
-
-public class TireAndWheel extends Part{
-	public int size;
-	public int width;
-
-}
